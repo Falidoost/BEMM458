@@ -6,4 +6,7 @@ class Customer:
         self.postcode = postcode
         self.email = email
 
+    def update_email(self, new_email):
+        if "@" in new_email:
+            self.email = new_email
         return
