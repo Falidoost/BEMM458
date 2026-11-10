@@ -9,7 +9,7 @@ class Customer:
     def __str__(self):
         customer_str = (f"Customer: {self.first_name} {self.last_name}\n" +
                         f"Account ID: {self.account_id}\n" +
-                        f"Postcode: {self.postcode}" +
+                        f"Postcode: {self.postcode}\n" +
                         f"Email: {self.email}\n ")
         
         return customer_str
