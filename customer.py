@@ -6,7 +6,10 @@ class Customer:
         self.postcode = postcode
         self.email = email
 
-    def update_email(self, new_email):
-        if "@" in new_email:
-            self.email = new_email
-        return
+    def __str__(self):
+        customer_str = (f"Customer: {self.first_name} {self.last_name}\n" +
+                        f"Account ID: {self.account_id}\n" +
+                        f"Postcode: {self.postcode}" +
+                        f"Email: {self.email}\n ")
+        
+        return customer_str
